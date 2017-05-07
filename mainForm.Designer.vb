@@ -418,7 +418,7 @@ Partial Class Lisk
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(144, 23)
         Me.Button1.TabIndex = 48
-        Me.Button1.Text = "Send ARK to someone"
+        Me.Button1.Text = "Send TRISE to someone"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button3

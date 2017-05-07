@@ -2279,7 +2279,7 @@ fooerror:
         Dim testo4 As String
         testo4 = testo2 / 100000000
         Label1.Text = "Address " & senderId
-        Label4.Text = testo4 & " ARK"
+        Label4.Text = testo4 & " TRISE"
 
         Button5.Enabled = True
         Button5.Text = "update balance"
