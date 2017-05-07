@@ -140,8 +140,8 @@ Public Class newAddress
         '     Dim jResults3 As Object = JObject.Parse(result)
         '   Dim testo3 As String = If(jResults3("account")("address") Is Nothing, "", jResults3("account")("address").ToString())
 
-        TextBox13.Text = testo2.Replace("Account does not have enough TRISE: ", "").Replace(" balance: 0", "")
-        testoxxxx = testo2.Replace("Account does not have enough TRISE: ", "").Replace(" balance: 0", "")
+        TextBox13.Text = testo2.Replace("Account does not have enough ARK: ", "").Replace(" balance: 0", "")
+        testoxxxx = testo2.Replace("Account does not have enough ARK: ", "").Replace(" balance: 0", "")
         MsgBox("New address is " & testoxxxx) ' mia pubkey
 
 
