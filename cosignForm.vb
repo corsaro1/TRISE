@@ -15,17 +15,17 @@ Public Class cosignForm
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
-        ' Dim url As String = "http://127.0.0.1:9001/api/multisignatures/sign"
+        ' Dim url As String = "http://127.0.0.1:9011/api/multisignatures/sign"
 
         Dim url As String
 
         If RadioButton1.Checked = True Then
-            '    url = "http://127.0.0.1:9001/api/multisignatures/sign"
+            '    url = "http://127.0.0.1:9011/api/multisignatures/sign"
 
 
 
             If Lisk.RadioButton1.Checked = True Then
-                url = "http://127.0.0.1:9001/api/multisignatures/sign"
+                url = "http://127.0.0.1:9011/api/multisignatures/sign"
 
             End If
             If Lisk.RadioButton2.Checked = True Then
@@ -33,7 +33,7 @@ Public Class cosignForm
 
             End If
             If Lisk.RadioButton3.Checked = True Then
-                url = "http://127.0.0.1:9001/api/multisignatures/sign"
+                url = "http://127.0.0.1:9011/api/multisignatures/sign"
 
             End If
             If Lisk.RadioButton4.Checked = True Then
@@ -81,7 +81,7 @@ Public Class cosignForm
 
         Dim reader As StreamReader
 
-        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9011/api/accounts?address=" & senderId), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
 
@@ -106,7 +106,7 @@ Public Class cosignForm
         seed = InputBox(prompt, title, defaultResponse)
         If seed Is "" Then GoTo fooerror2
 
-        '    request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts/delegates/?address=" & senderId), HttpWebRequest)
+        '    request = DirectCast(WebRequest.Create("http://127.0.0.1:9011/api/accounts/delegates/?address=" & senderId), HttpWebRequest)
         '  response = DirectCast(request.GetResponse(), HttpWebResponse)
         '  reader = New StreamReader(response.GetResponseStream())
 

@@ -68,19 +68,19 @@ Public Class pubkeyForm
         Dim url As String
 
         If RadioButton1.Checked = True Then
-            ' url = "http://127.0.0.1:9001/api/multisignatures/"
+            ' url = "http://127.0.0.1:9011/api/multisignatures/"
 
 
             If Lisk.RadioButton1.Checked = True Then
-                url = "http://127.0.0.1:9001/api/multisignatures/"
+                url = "http://127.0.0.1:9011/api/multisignatures/"
 
             End If
             If Lisk.RadioButton2.Checked = True Then
-                url = "http://127.0.0.1:9001/api/multisignatures/"
+                url = "http://127.0.0.1:9011/api/multisignatures/"
 
             End If
             If Lisk.RadioButton3.Checked = True Then
-                url = "http://127.0.0.1:9001/api/multisignatures/"
+                url = "http://127.0.0.1:9011/api/multisignatures/"
 
             End If
             If Lisk.RadioButton4.Checked = True Then
@@ -131,7 +131,7 @@ Public Class pubkeyForm
 
         Dim reader As StreamReader
 
-        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9011/api/accounts?address=" & senderId), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
 
@@ -155,7 +155,7 @@ Public Class pubkeyForm
         seed = InputBox(prompt, title, defaultResponse)
         If seed Is "" Then GoTo fooerror2
 
-        '    request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts/delegates/?address=" & senderId), HttpWebRequest)
+        '    request = DirectCast(WebRequest.Create("http://127.0.0.1:9011/api/accounts/delegates/?address=" & senderId), HttpWebRequest)
         '  response = DirectCast(request.GetResponse(), HttpWebResponse)
         '  reader = New StreamReader(response.GetResponseStream())
 

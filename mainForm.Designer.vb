@@ -327,7 +327,7 @@ Partial Class Lisk
         Me.LinkLabel1.TabIndex = 40
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Tag = ""
-        Me.LinkLabel1.Text = "http://127.0.0.1:9001"
+        Me.LinkLabel1.Text = "http://127.0.0.1:9011"
         '
         'LinkLabel2
         '
@@ -350,7 +350,7 @@ Partial Class Lisk
         Me.LinkLabel3.TabIndex = 42
         Me.LinkLabel3.TabStop = True
         Me.LinkLabel3.Tag = ""
-        Me.LinkLabel3.Text = "http://127.0.0.1:9001"
+        Me.LinkLabel3.Text = "http://127.0.0.1:9011"
         '
         'LinkLabel4
         '

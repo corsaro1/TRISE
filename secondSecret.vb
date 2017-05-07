@@ -41,7 +41,7 @@ Public Class secondSecret
         '  Dim url As String = "https://wallet.shiftnrg.org/api/accounts/open"
         '  Dim url As String = url1 + "api/accounts/open"
 
-        Dim url As String = "http://127.0.0.1:9001/api/signatures"
+        Dim url As String = "http://127.0.0.1:9011/api/signatures"
 
         If RadioButton1.Checked = True Then
 
@@ -49,7 +49,7 @@ Public Class secondSecret
 
 
             If Lisk.RadioButton1.Checked = True Then
-                url = "http://127.0.0.1:9001/api/signatures"
+                url = "http://127.0.0.1:9011/api/signatures"
 
 
             End If
@@ -58,7 +58,7 @@ Public Class secondSecret
 
             End If
             If Lisk.RadioButton3.Checked = True Then
-                url = "http://127.0.0.1:9001/api/signatures"
+                url = "http://127.0.0.1:9011/api/signatures"
 
             End If
             If Lisk.RadioButton4.Checked = True Then

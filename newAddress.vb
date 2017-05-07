@@ -25,15 +25,15 @@ Public Class newAddress
         Dim defaultResponse As String = String.Empty
         Dim prompt As String = String.Empty
 
-        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/generatePublicKey"
-        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/open"
+        '  Dim url As String = "http://127.0.0.1:9011/api/accounts/generatePublicKey"
+        '  Dim url As String = "http://127.0.0.1:9011/api/accounts/open"
         '  Dim url As String = url1 + "api/accounts/open"
 
 
-        Dim url As String = "http://127.0.0.1:9001/api/transactions"
+        Dim url As String = "http://127.0.0.1:9011/api/transactions"
 
         If Lisk.RadioButton1.Checked = True Then
-            url = "http://127.0.0.1:9001/api/transactions"
+            url = "http://127.0.0.1:9011/api/transactions"
 
 
         End If
@@ -42,7 +42,7 @@ Public Class newAddress
 
         End If
         If Lisk.RadioButton3.Checked = True Then
-            url = "http://127.0.0.1:9001/api/transactions"
+            url = "http://127.0.0.1:9011/api/transactions"
 
         End If
         If Lisk.RadioButton4.Checked = True Then
@@ -82,7 +82,7 @@ Public Class newAddress
 
         '    Dim readerx As StreamReader
 
-        '  request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
+        '  request = DirectCast(WebRequest.Create("http://127.0.0.1:9011/api/accounts?address=" & senderId), HttpWebRequest)
         '   responsex = DirectCast(request.GetResponse(), HttpWebResponse)
         '  readerx = New StreamReader(responsex.GetResponseStream())
         '  Try
@@ -243,12 +243,12 @@ fooerror:
         Dim defaultResponse As String = String.Empty
         Dim prompt As String = String.Empty
 
-        Dim url1 As String = "http://127.0.0.1:9001/"
+        Dim url1 As String = "http://127.0.0.1:9011/"
 
 
 
         If Lisk.RadioButton1.Checked = True Then
-            url1 = "http://127.0.0.1:9001/"
+            url1 = "http://127.0.0.1:9011/"
 
 
         End If
@@ -257,7 +257,7 @@ fooerror:
 
         End If
         If Lisk.RadioButton3.Checked = True Then
-            url1 = "http://127.0.0.1:9001/"
+            url1 = "http://127.0.0.1:9011/"
 
         End If
 
@@ -265,7 +265,7 @@ fooerror:
 
 
 
-        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/generatePublicKey"
+        '  Dim url As String = "http://127.0.0.1:9011/api/accounts/generatePublicKey"
         'Dim url As String = url1 + "api/accounts/generatePublicKey"
         '/api/accounts/getPublicKey
         Dim url As String = url1 + "api/accounts/getPublicKey"
