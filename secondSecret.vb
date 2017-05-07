@@ -41,7 +41,7 @@ Public Class secondSecret
         '  Dim url As String = "https://wallet.shiftnrg.org/api/accounts/open"
         '  Dim url As String = url1 + "api/accounts/open"
 
-        Dim url As String = "https://api.arknode.net/api/signatures"
+        Dim url As String = "http://127.0.0.1:9001/api/signatures"
 
         If RadioButton1.Checked = True Then
 
@@ -49,7 +49,7 @@ Public Class secondSecret
 
 
             If Lisk.RadioButton1.Checked = True Then
-                url = "https://api.arknode.net/api/signatures"
+                url = "http://127.0.0.1:9001/api/signatures"
 
 
             End If

@@ -25,15 +25,15 @@ Public Class newAddress
         Dim defaultResponse As String = String.Empty
         Dim prompt As String = String.Empty
 
-        '  Dim url As String = "https://api.arknode.net/api/accounts/generatePublicKey"
-        '  Dim url As String = "https://api.arknode.net/api/accounts/open"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/generatePublicKey"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/open"
         '  Dim url As String = url1 + "api/accounts/open"
 
 
-        Dim url As String = "https://api.arknode.net/api/transactions"
+        Dim url As String = "http://127.0.0.1:9001/api/transactions"
 
         If Lisk.RadioButton1.Checked = True Then
-            url = "https://api.arknode.net/api/transactions"
+            url = "http://127.0.0.1:9001/api/transactions"
 
 
         End If
@@ -82,7 +82,7 @@ Public Class newAddress
 
         '    Dim readerx As StreamReader
 
-        '  request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        '  request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         '   responsex = DirectCast(request.GetResponse(), HttpWebResponse)
         '  readerx = New StreamReader(responsex.GetResponseStream())
         '  Try
@@ -140,8 +140,8 @@ Public Class newAddress
         '     Dim jResults3 As Object = JObject.Parse(result)
         '   Dim testo3 As String = If(jResults3("account")("address") Is Nothing, "", jResults3("account")("address").ToString())
 
-        TextBox13.Text = testo2.Replace("Account does not have enough ARK: ", "").Replace(" balance: 0", "")
-        testoxxxx = testo2.Replace("Account does not have enough ARK: ", "").Replace(" balance: 0", "")
+        TextBox13.Text = testo2.Replace("Account does not have enough TRISE: ", "").Replace(" balance: 0", "")
+        testoxxxx = testo2.Replace("Account does not have enough TRISE: ", "").Replace(" balance: 0", "")
         MsgBox("New address is " & testoxxxx) ' mia pubkey
 
 
@@ -243,12 +243,12 @@ fooerror:
         Dim defaultResponse As String = String.Empty
         Dim prompt As String = String.Empty
 
-        Dim url1 As String = "https://api.arknode.net/"
+        Dim url1 As String = "http://127.0.0.1:9001/"
 
 
 
         If Lisk.RadioButton1.Checked = True Then
-            url1 = "https://api.arknode.net/"
+            url1 = "http://127.0.0.1:9001/"
 
 
         End If
@@ -265,7 +265,7 @@ fooerror:
 
 
 
-        '  Dim url As String = "https://api.arknode.net/api/accounts/generatePublicKey"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/generatePublicKey"
         'Dim url As String = url1 + "api/accounts/generatePublicKey"
         '/api/accounts/getPublicKey
         Dim url As String = url1 + "api/accounts/getPublicKey"

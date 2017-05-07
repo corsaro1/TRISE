@@ -96,7 +96,7 @@ Public Class Lisk
 
 
         If RadioButton1.Checked = True Then
-            url1 = "https://api.arknode.net/"
+            url1 = "http://127.0.0.1:9001/"
 
         End If
         If RadioButton2.Checked = True Then
@@ -147,7 +147,7 @@ Public Class Lisk
 
         Dim reader As StreamReader
         On Error Resume Next
-        request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
 
@@ -162,7 +162,7 @@ Public Class Lisk
         Dim testo4 As String
         testo4 = testo2 / 100000000
         Label1.Text = "Address " & senderId
-        Label4.Text = testo4 & " ARK"
+        Label4.Text = testo4 & " TRISE"
 
         Button5.Enabled = True
         Button5.Text = "update balance"
@@ -268,10 +268,10 @@ Public Class Lisk
     Private Sub Button2_Click_2(sender As System.Object, e As System.EventArgs) Handles Button2.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
 
-        Dim url As String = "https://api.arknode.net/api/transactions"
+        Dim url As String = "http://127.0.0.1:9001/api/transactions"
 
         If RadioButton1.Checked = True Then
-            url = "https://api.arknode.net/api/transactions"
+            url = "http://127.0.0.1:9001/api/transactions"
 
 
         End If
@@ -321,7 +321,7 @@ Public Class Lisk
 
         Dim post As String
         Dim original As String
-        prompt = "How many ARK to send?"
+        prompt = "How many TRISE to send?"
         original = InputBox(prompt, title, defaultResponse)
         If original Is "" Then GoTo FooError
         '  https://www.dotnetperls.com/string-length-vbnet
@@ -371,11 +371,11 @@ Public Class Lisk
             If Regex.IsMatch(original, "^[0-9 ]+$") Then
                 If post = "" Then
 
-                    MsgBox(original & ",00" & " ARK will be sent")
+                    MsgBox(original & ",00" & " TRISE will be sent")
 
                 Else
 
-                    MsgBox(original & "," & post & " ARK will be sent")
+                    MsgBox(original & "," & post & " TRISE will be sent")
 
                 End If
 
@@ -629,7 +629,7 @@ FooError:
         Dim reader As StreamReader
 
         On Error Resume Next
-        request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
 
@@ -655,10 +655,10 @@ fooerror:
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
         ' System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls
-        Dim url As String = "https://api.arknode.net/api/transactions"
+        Dim url As String = "http://127.0.0.1:9001/api/transactions"
 
         If RadioButton1.Checked = True Then
-            url = "https://api.arknode.net/api/transactions"
+            url = "http://127.0.0.1:9001/api/transactions"
 
 
         End If
@@ -707,7 +707,7 @@ fooerror:
 
         Dim post As String
         Dim original As String
-        prompt = "How many ARK to send?"
+        prompt = "How many TRISE to send?"
         original = InputBox(prompt, title, defaultResponse)
         If original Is "" Then GoTo FooError
         '  https://www.dotnetperls.com/string-length-vbnet
@@ -757,11 +757,11 @@ fooerror:
             If Regex.IsMatch(original, "^[0-9 ]+$") Then
                 If post = "" Then
 
-                    MsgBox(original & ",00" & " ARK will be sent")
+                    MsgBox(original & ",00" & " TRISE will be sent")
 
                 Else
 
-                    MsgBox(original & "," & post & " ARK will be sent")
+                    MsgBox(original & "," & post & " TRISE will be sent")
 
                 End If
 
@@ -945,7 +945,7 @@ FooError:
 
         On Error Resume Next
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11 Or SecurityProtocolType.Tls12
-        request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
 
@@ -960,7 +960,7 @@ FooError:
         Dim testo4 As String
         testo4 = testo2 / 100000000
         Label1.Text = "Address " & senderId
-        Label4.Text = testo4 & " ARK"
+        Label4.Text = testo4 & " TRISE"
 
         Button5.Enabled = True
         Button5.Text = "update"
@@ -981,7 +981,7 @@ fooerror:
         Dim prompt As String = String.Empty
 
         On Error Resume Next
-        request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
 
@@ -996,7 +996,7 @@ fooerror:
         Dim testo4 As String
         testo4 = testo2 / 100000000
         Label1.Text = "Address " & senderId
-        Label4.Text = testo4 & " ARK"
+        Label4.Text = testo4 & " TRISE"
         Button5.Enabled = True
         Button5.Text = "update balance"
 
@@ -1020,7 +1020,7 @@ fooerror:
     Private Sub Button6_Click(sender As System.Object, e As System.EventArgs) Handles Button6.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
         votepools = "no"
-        If MsgBox("Completing this procedure will cost you 1 ARK and you will vote all public wallet delegates: corsaro, phoenix1969, vipertdk, punkrock, hagie, gr33ndragon, bioly and isabella, so to support this software", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
+        If MsgBox("Completing this procedure will cost you 1 TRISE and you will vote all public wallet delegates: corsaro, phoenix1969, vipertdk, punkrock, hagie, gr33ndragon, bioly and isabella, so to support this software", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
 
 
 
@@ -1092,10 +1092,10 @@ fooerror:
 
     Private Sub Button8_Click(sender As System.Object, e As System.EventArgs) Handles Button8.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
-        Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
 
         If RadioButton1.Checked = True Then
-            url = "https://api.arknode.net/api/accounts/delegates"
+            url = "http://127.0.0.1:9001/api/accounts/delegates"
 
 
         End If
@@ -1151,7 +1151,7 @@ fooerror:
 
         Dim reader As StreamReader
 
-        request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
 
@@ -1176,7 +1176,7 @@ fooerror:
         '  seed = InputBox(prompt, title, defaultResponse)
         '  If seed Is "" Then GoTo fooerror2
 
-        request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts/delegates/?address=" & senderId), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts/delegates/?address=" & senderId), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
 
@@ -1438,10 +1438,10 @@ Fooerror2:
 
         'voto
 
-        Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
 
         If RadioButton1.Checked = True Then
-            url = "https://api.arknode.net/api/accounts/delegates"
+            url = "http://127.0.0.1:9001/api/accounts/delegates"
 
 
         End If
@@ -1498,7 +1498,7 @@ Fooerror2:
 
         Dim reader As StreamReader
 
-        request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
 
@@ -1527,7 +1527,7 @@ Fooerror2:
 
 
 
-        request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts/delegates/?address=" & senderId), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts/delegates/?address=" & senderId), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
 
@@ -1793,7 +1793,7 @@ FooError:
 
     Private Sub Button13_Click(sender As System.Object, e As System.EventArgs) Handles Button13.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
-        If MsgBox("Completing this procedure will cost you 1 ARK and you will vote all public wallet delegates: corsaro, phoenix1969, vipertdk, punkrock, hagie, gr33ndragon, bioly and isabella, so to support this software and besides you will stake your lisk on some of the main Lisk pools:" & vbCrLf & vbCrLf & "phinx" & vbCrLf & "shinekami" & vbCrLf & "thepool" & vbCrLf & "liskpool_com_01" & vbCrLf & "robinhood" & vbCrLf & "rooney" & vbCrLf & "badman0316" & vbCrLf & "lisk.pool.sexy", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
+        If MsgBox("Completing this procedure will cost you 1 TRISE and you will vote all public wallet delegates: corsaro, phoenix1969, vipertdk, punkrock, hagie, gr33ndragon, bioly and isabella, so to support this software and besides you will stake your lisk on some of the main Lisk pools:" & vbCrLf & vbCrLf & "phinx" & vbCrLf & "shinekami" & vbCrLf & "thepool" & vbCrLf & "liskpool_com_01" & vbCrLf & "robinhood" & vbCrLf & "rooney" & vbCrLf & "badman0316" & vbCrLf & "lisk.pool.sexy", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
 
 
             'MsgBox("Completing this procedure will cost you 1 LISK and you will vote all public wallet delegates: corsaro, phoenix1969, vipertdk, punkrock, hagie, gr33ndragon, bioly and isabella, so to support this software and besides you will stake your lisk on some of the main Lisk pools:" & vbCrLf & vbCrLf & "phinx" & vbCrLf & "shinekami" & vbCrLf & "thepool" & vbCrLf & "liskpool_com_01" & vbCrLf & "robinhood" & vbCrLf & "rooney" & vbCrLf & "badman0316" & vbCrLf & "lisk.pool.sexy")
@@ -1874,7 +1874,7 @@ fooerror:
         Dim defaultResponse As String = String.Empty
         Dim prompt As String = String.Empty
 
-        Dim url As String = "https://api.arknode.net/api/accounts/generatePublicKey"
+        Dim url As String = "http://127.0.0.1:9001/api/accounts/generatePublicKey"
 
 
         Dim request As HttpWebRequest
@@ -1883,7 +1883,7 @@ fooerror:
 
         ' Dim readerx As StreamReader
 
-        ' request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        ' request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         '   responsex = DirectCast(request.GetResponse(), HttpWebResponse)
         '  readerx = New StreamReader(responsex.GetResponseStream())
         '  Try
@@ -1956,7 +1956,7 @@ fooerror:
         Dim defaultResponse As String = String.Empty
         Dim prompt As String = String.Empty
 
-        '  Dim url As String = "https://api.arknode.net/api/accounts/generatePublicKey"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/generatePublicKey"
         Dim url As String = url1 + "api/accounts/generatePublicKey"
 
 
@@ -1966,7 +1966,7 @@ fooerror:
 
         '    Dim readerx As StreamReader
 
-        '  request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        '  request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         '   responsex = DirectCast(request.GetResponse(), HttpWebResponse)
         '  readerx = New StreamReader(responsex.GetResponseStream())
         '  Try
@@ -2043,7 +2043,7 @@ fooerror:
 
         On Error Resume Next
 
-        request = DirectCast(WebRequest.Create("https://api.arknode.net/api/loader/status/sync"), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/loader/status/sync"), HttpWebRequest)
 
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
@@ -2072,8 +2072,8 @@ fooerror:
         Dim reader As StreamReader
 
         On Error Resume Next
-        request = DirectCast(WebRequest.Create("https://api.arknode.net/api/loader/status/sync"), HttpWebRequest)
-        'request = DirectCast(WebRequest.Create("https://api.arknode.net/api/loader/status/sync"), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/loader/status/sync"), HttpWebRequest)
+        'request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/loader/status/sync"), HttpWebRequest)
 
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
@@ -2290,10 +2290,10 @@ fooerror:
 
     Private Sub Button17_Click(sender As System.Object, e As System.EventArgs) Handles Button17.Click
 
-        Dim url As String = "https://api.arknode.net/api/multisignatures/sign"
+        Dim url As String = "http://127.0.0.1:9001/api/multisignatures/sign"
 
         If RadioButton1.Checked = True Then
-            url = "https://api.arknode.net/api/multisignatures/sign"
+            url = "http://127.0.0.1:9001/api/multisignatures/sign"
 
 
         End If
@@ -2349,7 +2349,7 @@ fooerror:
 
         Dim reader As StreamReader
 
-        request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
 
@@ -2374,7 +2374,7 @@ fooerror:
         seed = InputBox(prompt, title, defaultResponse)
         If seed Is "" Then GoTo Fooerror2
 
-        '    request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts/delegates/?address=" & senderId), HttpWebRequest)
+        '    request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts/delegates/?address=" & senderId), HttpWebRequest)
         '  response = DirectCast(request.GetResponse(), HttpWebResponse)
         '  reader = New StreamReader(response.GetResponseStream())
 
@@ -2563,7 +2563,7 @@ Fooerror2:
 
 
 
-            'request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderid2), HttpWebRequest)
+            'request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderid2), HttpWebRequest)
         End If
 
 
@@ -2587,7 +2587,7 @@ Fooerror2:
 
         Dim reader As StreamReader
 
-        ' request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderid2), HttpWebRequest)
+        ' request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderid2), HttpWebRequest)
 
         '  request = DirectCast(WebRequest.Create("https://testnet-wallet.lisknode.io/api/accounts?address=" & senderid2), HttpWebRequest)
 
@@ -2876,7 +2876,7 @@ fooerror:
         ElseIf result = DialogResult.Yes Then
             url = "api.arknode.net"
 
-            'request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderid2), HttpWebRequest)
+            'request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderid2), HttpWebRequest)
         End If
 
 
@@ -2900,7 +2900,7 @@ fooerror:
 
         Dim reader As StreamReader
 
-        ' request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderid2), HttpWebRequest)
+        ' request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderid2), HttpWebRequest)
 
         '  request = DirectCast(WebRequest.Create("https://testnet-wallet.lisknode.io/api/accounts?address=" & senderid2), HttpWebRequest)
 
@@ -3187,15 +3187,15 @@ fooerror:
         Dim defaultResponse As String = String.Empty
         Dim prompt As String = String.Empty
 
-        '  Dim url As String = "https://api.arknode.net/api/accounts/generatePublicKey"
-        '  Dim url As String = "https://api.arknode.net/api/accounts/open"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/generatePublicKey"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/open"
         '  Dim url As String = url1 + "api/accounts/open"
 
 
-        Dim url As String = "https://api.arknode.net/api/delegates"
+        Dim url As String = "http://127.0.0.1:9001/api/delegates"
 
         If RadioButton1.Checked = True Then
-            url = "https://api.arknode.net/api/accounts/open"
+            url = "http://127.0.0.1:9001/api/accounts/open"
 
 
         End If
@@ -3244,7 +3244,7 @@ fooerror:
 
         '    Dim readerx As StreamReader
 
-        '  request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        '  request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         '   responsex = DirectCast(request.GetResponse(), HttpWebResponse)
         '  readerx = New StreamReader(responsex.GetResponseStream())
         '  Try
@@ -3362,7 +3362,7 @@ fooerror:
             MsgBox("You have not saved the secret of this newly generated address" + vbCrLf + "Remember to Save carefully the Secret before using this new generated address ")
             Button25.Text = "IMPORTANT! - Save Secret"
         Else
-            MsgBox("Secret has been saved on your PC. Kindly make different copies of this file to not lost your ARK in case of hdd failure")
+            MsgBox("Secret has been saved on your PC. Kindly make different copies of this file to not lost your TRISE in case of hdd failure")
         End If
 
 
@@ -3427,7 +3427,7 @@ fooerror:
 
     Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
-        If MsgBox("With this procedure you will associate a delegate name to your address and will cost 25 ARK", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
+        If MsgBox("With this procedure you will associate a delegate name to your address and will cost 25 TRISE", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
 
 
             'MsgBox("Completing this procedure will cost you 1 LISK and you will vote all public wallet delegates: corsaro, phoenix1969, vipertdk, punkrock, hagie, gr33ndragon, bioly and isabella, so to support this software and besides you will stake your lisk on some of the main Lisk pools:" & vbCrLf & vbCrLf & "phinx" & vbCrLf & "shinekami" & vbCrLf & "thepool" & vbCrLf & "liskpool_com_01" & vbCrLf & "robinhood" & vbCrLf & "rooney" & vbCrLf & "badman0316" & vbCrLf & "lisk.pool.sexy")
@@ -3502,10 +3502,10 @@ fooerror:
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
 
 
-        Dim url As String = "https://api.arknode.net/api/delegates"
+        Dim url As String = "http://127.0.0.1:9001/api/delegates"
 
         If RadioButton1.Checked = True Then
-            url = "https://api.arknode.net/api/delegates"
+            url = "http://127.0.0.1:9001/api/delegates"
 
 
         End If
@@ -3548,8 +3548,8 @@ fooerror:
         Dim defaultResponse As String = String.Empty
         Dim prompt As String = String.Empty
 
-        '  Dim url As String = "https://api.arknode.net/api/accounts/generatePublicKey"
-        '  Dim url As String = "https://api.arknode.net/api/accounts/open"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/generatePublicKey"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/open"
         ' Dim url As String = url1 + "api/delegates"
         '/api/accounts/open
 
@@ -3560,7 +3560,7 @@ fooerror:
 
         '    Dim readerx As StreamReader
 
-        '  request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        '  request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         '   responsex = DirectCast(request.GetResponse(), HttpWebResponse)
         '  readerx = New StreamReader(responsex.GetResponseStream())
         '  Try
@@ -3660,12 +3660,12 @@ fooerror:
         Dim defaultResponse As String = String.Empty
         Dim prompt As String = String.Empty
 
-        '  Dim url As String = "https://api.arknode.net/api/accounts/generatePublicKey"
-        '  Dim url As String = "https://api.arknode.net/api/accounts/open"
-        Dim url As String = "https://api.arknode.net/api/delegates"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/generatePublicKey"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/open"
+        Dim url As String = "http://127.0.0.1:9001/api/delegates"
 
         If RadioButton1.Checked = True Then
-            url = "https://api.arknode.net/api/delegates"
+            url = "http://127.0.0.1:9001/api/delegates"
 
 
         End If
@@ -3711,7 +3711,7 @@ fooerror:
 
         '    Dim readerx As StreamReader
 
-        '  request = DirectCast(WebRequest.Create("https://api.arknode.net/api/accounts?address=" & senderId), HttpWebRequest)
+        '  request = DirectCast(WebRequest.Create("http://127.0.0.1:9001/api/accounts?address=" & senderId), HttpWebRequest)
         '   responsex = DirectCast(request.GetResponse(), HttpWebResponse)
         '  readerx = New StreamReader(responsex.GetResponseStream())
         '  Try

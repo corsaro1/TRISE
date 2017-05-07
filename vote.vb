@@ -18,7 +18,7 @@ Public Class vote
 
 
         If Lisk.RadioButton1.Checked = True Then
-            url1 = "https://api.arknode.net/"
+            url1 = "http://127.0.0.1:9001/"
 
         End If
         If Lisk.RadioButton2.Checked = True Then
@@ -76,7 +76,7 @@ Public Class vote
 
         Dim posturl As String = "api/accounts/delegates"
 
-        'Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        'Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
         Dim url As String = url1 + posturl
 
 
@@ -428,11 +428,11 @@ fooerror:
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11 Or SecurityProtocolType.Tls12
 
-        '  Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
 
         Dim posturl As String = "api/accounts/delegates"
 
-        'Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        'Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
         Dim url As String = url1 + posturl
 
 
@@ -514,11 +514,11 @@ fooerror:
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
 
-        'Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        'Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
 
         Dim posturl As String = "api/accounts/delegates"
 
-        'Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        'Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
         Dim url As String = url1 + posturl
 
 
@@ -700,7 +700,7 @@ fooerror:
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
         ' votepools = "no"
-        If MsgBox("Completing this procedure will cost you 1 ARK and you will vote ", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
+        If MsgBox("Completing this procedure will cost you 1 TRISE and you will vote ", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
 
             Dim senderId As String = Lisk.senderId
 
@@ -770,11 +770,11 @@ fooerror:
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
 
-        ' Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        ' Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
 
         Dim posturl As String = "api/accounts/delegates"
 
-        'Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        'Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
         Dim url As String = url1 + posturl
 
 
@@ -957,7 +957,7 @@ fooerror:
         Dim defaultResponse As String = String.Empty
         Dim prompt As String = String.Empty
 
-        '  Dim url As String = "https://api.arknode.net/api/accounts/generatePublicKey"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/generatePublicKey"
         'Dim url As String = url1 + "api/accounts/generatePublicKey"
         '/api/accounts/getPublicKey
         Dim url As String = url1 + "api/accounts/getPublicKey"
@@ -1039,7 +1039,7 @@ fooerror:
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
         ' votepools = "no"
-        If MsgBox("Completing this procedure will cost you 1 ARK and you will vote ", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
+        If MsgBox("Completing this procedure will cost you 1 TRISE and you will vote ", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
 
             Dim senderId As String = Lisk.senderId
 
@@ -1110,11 +1110,11 @@ fooerror:
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
         Dim senderId As String = Lisk.senderId
-        ' Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        ' Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
 
         Dim posturl As String = "api/accounts/delegates/"
 
-        'Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        'Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
         Dim url As String = url1 + posturl
 
 
@@ -1245,7 +1245,7 @@ fooerror:
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
         ' votepools = "no"
-        If MsgBox("Completing this procedure will cost you 1 ARK and you will unvote ", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
+        If MsgBox("Completing this procedure will cost you 1 TRISE and you will unvote ", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
 
             Dim senderId As String = Lisk.senderId
 
@@ -1316,11 +1316,11 @@ fooerror:
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
         Dim senderId As String = Lisk.senderId
-        ' Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        ' Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
 
         Dim posturl As String = "api/accounts/delegates"
 
-        'Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        'Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
         Dim url As String = url1 + posturl
 
         ' MsgBox(senderId)
@@ -1456,11 +1456,11 @@ fooerror:
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
         Dim senderId As String = Lisk.senderId
-        '  Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        '  Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
 
         Dim posturl As String = "api/accounts/delegates"
 
-        'Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        'Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
         Dim url As String = url1 + posturl
 
 
@@ -1586,11 +1586,11 @@ fooerror:
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
 
-        '   Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        '   Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
 
         Dim posturl As String = "api/accounts/delegates"
 
-        'Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        'Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
         Dim url As String = url1 + posturl
 
 
@@ -1769,11 +1769,11 @@ fooerror:
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
 
-        ' Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        ' Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
 
         Dim posturl As String = "api/accounts/delegates"
 
-        'Dim url As String = "https://api.arknode.net/api/accounts/delegates"
+        'Dim url As String = "http://127.0.0.1:9001/api/accounts/delegates"
         Dim url As String = url1 + posturl
 
 
@@ -1953,7 +1953,7 @@ fooerror:
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
         System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
         ' votepools = "no"
-        If MsgBox("Completing this procedure will cost you 1 ARK and you will unvote ", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
+        If MsgBox("Completing this procedure will cost you 1 TRISE and you will unvote ", MsgBoxStyle.OkCancel, "Title") = MsgBoxResult.Ok Then
 
             Dim senderId As String = Lisk.senderId
 

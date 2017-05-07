@@ -327,7 +327,7 @@ Partial Class Lisk
         Me.LinkLabel1.TabIndex = 40
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Tag = ""
-        Me.LinkLabel1.Text = "https://api.arknode.net"
+        Me.LinkLabel1.Text = "http://127.0.0.1:9001"
         '
         'LinkLabel2
         '
