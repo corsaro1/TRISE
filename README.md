@@ -12,6 +12,12 @@ visual studio 2015 express source code attached.
 
 ![Alt text](./image.PNG?raw=true "Optional Title")
 
+HOW TO TUNNEL ON WINDOWS USING PUTTY
+
+![Alt text](./putty2.PNG?raw=true "Optional Title")
+
+![Alt text](./putty1.PNG?raw=true "Optional Title")
+
 
 #### Building from source
 Clone the repo on your hard disk, Open the file WAW.vbproj with Visual Studio 2015 or superior, then go to menu "Build" >> Build WAW
