@@ -75,7 +75,7 @@ Public Class Lisk
         My.Computer.FileSystem.WriteAllBytes("NBitcoin.dll", My.Resources.NBitcoin, False)
 
         Dim pRegKey As RegistryKey = Registry.CurrentUser
-        pRegKey = pRegKey.OpenSubKey("SOFTWARE\ark")
+        pRegKey = pRegKey.OpenSubKey("SOFTWARE\trise")
         senderId = pRegKey.GetValue("address")
         ' MsgBox(val)
         ' carica()
@@ -937,7 +937,7 @@ FooError:
         'http://www.dotnetheaven.com/article/windows-registry-in-vb.net
         'https://msdn.microsoft.com/it-it/library/xz88758e.aspx
         Dim key As RegistryKey = Registry.CurrentUser.OpenSubKey("Software", True)
-        Dim newkey As RegistryKey = key.CreateSubKey("ark")
+        Dim newkey As RegistryKey = key.CreateSubKey("trise")
         newkey.SetValue("address", senderId)
 
 
@@ -1783,7 +1783,7 @@ FooError:
 
 
         Dim pRegKey As RegistryKey = Registry.CurrentUser
-        pRegKey = pRegKey.OpenSubKey("SOFTWARE\ark")
+        pRegKey = pRegKey.OpenSubKey("SOFTWARE\trise")
         Dim val As Object = pRegKey.GetValue("address")
         MsgBox(val)
 
