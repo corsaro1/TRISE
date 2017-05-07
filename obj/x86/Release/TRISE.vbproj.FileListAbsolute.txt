@@ -1,0 +1,17 @@
+C:\Users\All Users\progetti\definitivo\TRISE\bin\Release\NBitcoin.dll
+C:\Users\All Users\progetti\definitivo\TRISE\bin\Release\Newtonsoft.Json.dll
+C:\Users\All Users\progetti\definitivo\TRISE\obj\x86\Release\TRISE.vbproj.GenerateResource.Cache
+C:\Users\All Users\progetti\definitivo\TRISE\bin\Release\TRISE.exe.config
+C:\Users\All Users\progetti\definitivo\TRISE\bin\Release\TRISE.exe
+C:\Users\All Users\progetti\definitivo\TRISE\bin\Release\TRISE.pdb
+C:\Users\All Users\progetti\definitivo\TRISE\bin\Release\TRISE.xml
+C:\Users\All Users\progetti\definitivo\TRISE\obj\x86\Release\TRISE.cosignForm.resources
+C:\Users\All Users\progetti\definitivo\TRISE\obj\x86\Release\TRISE.newAddress.resources
+C:\Users\All Users\progetti\definitivo\TRISE\obj\x86\Release\TRISE.pubkeyForm.resources
+C:\Users\All Users\progetti\definitivo\TRISE\obj\x86\Release\TRISE.Lisk.resources
+C:\Users\All Users\progetti\definitivo\TRISE\obj\x86\Release\TRISE.Resources.resources
+C:\Users\All Users\progetti\definitivo\TRISE\obj\x86\Release\TRISE.secondSecret.resources
+C:\Users\All Users\progetti\definitivo\TRISE\obj\x86\Release\TRISE.vote.resources
+C:\Users\All Users\progetti\definitivo\TRISE\obj\x86\Release\TRISE.exe
+C:\Users\All Users\progetti\definitivo\TRISE\obj\x86\Release\TRISE.xml
+C:\Users\All Users\progetti\definitivo\TRISE\obj\x86\Release\TRISE.pdb
